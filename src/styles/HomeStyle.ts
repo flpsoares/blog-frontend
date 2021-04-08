@@ -1,4 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+interface Props {
+	width?: string
+}
 
 export const Container = styled.div`
   background-image:url('assets/background.png');
@@ -12,16 +16,17 @@ export const Container = styled.div`
 `
 
 export const Box = styled.div`
-	width: 700px;
+	width: 100%;
+	max-width: 700px;
 	height: 600px;
 	display: table;
-	cursor: pointer;
+	/* cursor: pointer; */
 	font-size: 50px;
 	color: white;
 
 	.grow {
 		display: table-cell;
-		width: 40%;
+		width: 50%;
 		height: 100%;
 		text-align: center;
 		padding-top: 150px;
@@ -32,11 +37,22 @@ export const Box = styled.div`
 		p {
 			font-size: 30px;
 		}
+	}
+
+	.active {
+		width: 80%;
 
 		&:hover {
-			width: 60%;
+			width: 80%;
 		}
+	}
 
+	.desactive {
+		width: 20%;
+
+		&:hover {
+			width: 20%;
+		}
 	}
 
 	#signIn {
