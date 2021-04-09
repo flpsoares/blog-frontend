@@ -1,10 +1,9 @@
 import { GlobalStyle } from "../../GlobalStyle"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserPlus, faEye, faEyeSlash, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faUser, faUserPlus)
+library.add(faUser, faUserPlus, faEye, faEyeSlash, faLongArrowAltRight)
 
 function MyApp({ Component, pageProps }) {
   return (
