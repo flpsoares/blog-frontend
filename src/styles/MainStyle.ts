@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  overflow-y: hidden;
   width: 100%;
   min-height: 100vh;
 
@@ -14,12 +15,13 @@ export const Container = styled.div`
   'nav nav nav'
   'menu subnav search'
   'menu feed search';
+
 `
 
 export const Navbar = styled.div`
   grid-area: nav;
   background: #121214;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--border);
 
   display: flex;
   align-items: center;
@@ -55,7 +57,7 @@ export const Welcome = styled.div`
 `
 export const Menu = styled.div`
   grid-area: menu;
-  border-right: 1px solid var(--white);
+  border-right: 1px solid var(--border);
 
   display: flex;
   justify-content: space-between;
@@ -70,22 +72,21 @@ export const Menu = styled.div`
     flex-direction: column;
   }
 `
-
 export const SubNavbar = styled.div`
   grid-area: subnav;
-  /* border-bottom: 1px solid var(--white); */
 
   display: flex;
   justify-content: center;
   align-items: center;
 `
-
-
 export const Feed = styled.div`
   grid-area: feed;
-`
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 export const Search = styled.div`
   grid-area: search;
-  border-left: 1px solid var(--white);
+  border-left: 1px solid var(--border);
 `

@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     --white: rgb(195, 195, 195);
+    --border: rgb(135, 135, 135);
     --secondary: rgb(128, 78, 239);
   }
 `
